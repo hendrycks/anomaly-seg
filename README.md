@@ -1,6 +1,6 @@
 # Combined Anomalous Object Segmentation Benchmark
 
-This repository contains the StreetHazards dataset and some code for the paper [A Benchmark for Anomaly Segmentation](https://arxiv.org/abs/1903.12261).
+This repository contains the StreetHazards dataset and some code for the paper [A Benchmark for Anomaly Segmentation](https://arxiv.org/abs/soon).
 
 <img align="center" src="streethazards.gif" width="500">
 

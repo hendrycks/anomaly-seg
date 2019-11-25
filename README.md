@@ -1,19 +1,15 @@
-# anomaly-seg
-The Combined Anomalous Object Segmentation Benchmark
+# Combined Anomalous Object Segmentation Benchmark
 
-The Street Hazards dataset can be downloaded from the links below.
+This repository contains the StreetHazards dataset and some code for the paper [A Benchmark for Anomaly Segmentation](https://arxiv.org/abs/1903.12261).
 
-https://people.eecs.berkeley.edu/~hendrycks/streethazards_train.tar
-https://people.eecs.berkeley.edu/~hendrycks/streethazards_test.tar
+<img align="center" src="streethazards.gif" width="500">
 
-![Street Hazards Example](street_hazards_example_horiz.png)
+__[Download the StreetHazards anomaly segmentation dataset here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_test.tar).__
 
-The Berkeley Deep Drive 100K dataset can be downloaded from the link below.
-
-bdd-data.berkeley.edu/
+The optional StreetHazards training set is available [here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_train.tar). Also, the BDD-Anomaly dataset is sourced from the [BDD100K dataset](bdd-data.berkeley.edu).
 
 
-## How to use this repo
+## How to use this repository
 
 
     git clone --recursive https://github.com/hendrycks/anomaly-seg
@@ -32,8 +28,7 @@ bdd-data.berkeley.edu/
     # To evaluate the model on out of distribution test set
     python3 eval_ood.py --DATASET.list_val ./data/test.odgt
 
-
-Note: To evaluate the model performance using a CRF with our code please install
+To evaluate the model performance using a CRF with our code please install
 
     pip install pydensecrf
 
@@ -42,7 +37,7 @@ The source package is from https://github.com/lucasb-eyer/pydensecrf
 
 ## Evaluation with BDD100K
 
-Within the create_dataset.py file we provide a function that converts the BDD100K labels into the labels we used for our experiments.  We have commented out the section that creates the odgt files we used for BDD100K.  Uncommenting and running will generate the appropriate labels used for training and testing. The remaining procedure is the same as described above.
+Within the create_dataset.py file we provide a function that converts the BDD100K labels into the labels we used for our experiments.  We have commented out the section that creates the odgt files that we used for BDD100K.  Uncommenting and running will generate the appropriate labels used for training and testing. The remaining procedure is the same as described above.
 
 
 ## Citation

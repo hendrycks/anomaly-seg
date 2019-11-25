@@ -1,6 +1,9 @@
 # anomaly-seg
 The Combined Anomalous Object Segmentation Benchmark
 
+https://people.eecs.berkeley.edu/~hendrycks/streethazards_train.tar
+https://people.eecs.berkeley.edu/~hendrycks/streethazards_test.tar
+
 ## Citation
 
 If you find this useful in your research, please consider citing:

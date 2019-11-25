@@ -1,0 +1,3 @@
+[submodule "semantic-segmentation-pytorch"]
+	path = semantic-segmentation-pytorch
+	url = https://github.com/CSAILVision/semantic-segmentation-pytorch

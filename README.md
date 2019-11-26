@@ -6,7 +6,7 @@ This repository contains the StreetHazards dataset and some code for the paper [
 
 __[Download the StreetHazards anomaly segmentation dataset here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_test.tar).__
 
-The optional StreetHazards training set is available [here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_train.tar). Also, the BDD-Anomaly dataset is sourced from the [BDD100K dataset](bdd-data.berkeley.edu).
+The optional StreetHazards training set is available [here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_train.tar). Also, the BDD-Anomaly dataset is sourced from the [BDD100K dataset](bdd-data.berkeley.edu). Code for the multi-label out-of-distribution detection experiments is available in [this repository](https://github.com/xksteven/multilabel-ood).
 
 
 ## How to use this repository

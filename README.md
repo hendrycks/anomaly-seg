@@ -1,6 +1,6 @@
 # Combined Anomalous Object Segmentation Benchmark
 
-This repository contains the StreetHazards dataset and some code for the paper [A Benchmark for Anomaly Segmentation](https://arxiv.org/abs/soon).
+This repository contains the StreetHazards dataset and some code for the paper [A Benchmark for Anomaly Segmentation](https://arxiv.org/abs/1911.11132).
 
 <img align="center" src="streethazards.gif" width="500">
 
@@ -47,6 +47,6 @@ If you find this useful in your research, please consider citing:
     @article{hendrycks2019anomalyseg,
       title={A Benchmark for Anomaly Segmentation},
       author={Hendrycks, Dan and Basart, Steven and Mazeika, Mantas and Mostajabi, Mohammadreza and Steinhardt, Jacob and Song, Dawn},
-      journal={arXiv preprint arXiv:},
+      journal={arXiv preprint arXiv:1911.11132},
       year={2019}
     }

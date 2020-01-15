@@ -14,6 +14,7 @@ The optional StreetHazards training set is available [here](https://people.eecs.
 
     git clone --recursive https://github.com/hendrycks/anomaly-seg
 
+    cd anomaly-seg
     mv defaults.py semantic-segmentation-pytorch/config
     mv anom_utils.py semantic-segmentation-pytorch/
     mv dataset.py semantic-segmentation-pytorch/
@@ -22,6 +23,11 @@ The optional StreetHazards training set is available [here](https://people.eecs.
     cd semantic-segmentation-pytorch
 
     # Place the above download in semantic-segmentation-pytorch/data/
+    cd data/
+    tar -xvf streethazards_train.tar
+    cd ..
+    python3 create_dataset.py
+    
     # Train pspnet or another model on our dataset
     python3 train.py
 

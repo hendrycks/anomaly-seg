@@ -44,11 +44,12 @@ def create_odgt(root_dir, file_dir, ann_dir, out_dir, anom_files=None):
         anom_files = []
     _files = []
 
-    count1 = 0
+    count = total = 0
     town_names = sorted(os.listdir(root_dir+file_dir))
 
     for town in town_names:
         img_files = sorted(os.listdir(os.path.join(root_dir,file_dir,town)))
+        total += len(img_files)
         for img in img_files:
             ann_file = img
             ann_file_path = os.path.join(root_dir,ann_dir,town,ann_file)
@@ -63,13 +64,12 @@ def create_odgt(root_dir, file_dir, ann_dir, out_dir, anom_files=None):
                 # If converting BDD100K uncomment out the following
                 #img = Image.open(ann_file_path)
                 #if np.any(np.logical_or( (img == 19), (img == 20) )):
-                #    count2 += 1
                 #    anom_files.append(dict_entry)
                 #else:
-                count1 += 1
+                count += 1
                 _files.append(dict_entry)
 
-    print("total images in = {} and out =  {}".format(count1, count2))
+    print("total images in = {} and out =  {}".format(total, count))
 
     with open(out_dir, "w") as outfile:
         json.dump(_files, outfile)
@@ -82,20 +82,20 @@ def create_odgt(root_dir, file_dir, ann_dir, out_dir, anom_files=None):
 
 
 out_dir = "data/train.odgt"
-root_dir = "data/"
-train_dir = "seg/images/train/ing"
-ann_dir = "seg/train_labels/training/"
+#modify root directory to reflect the location of where the streethazards_train was extracted to.
+root_dir = "data/train/"
+train_dir = "images/training"
+ann_dir = "annotations/training/"
 anom_files = create_odgt(root_dir, train_dir, ann_dir, out_dir)
 
+
 out_dir = "data/validation.odgt"
-root_dir = "data/"
 train_dir = "images/validation/"
 ann_dir = "annotations/validation/"
 create_odgt(root_dir, train_dir, ann_dir, out_dir, anom_files=anom_files)
 
 
 out_dir = "data/test.odgt"
-root_dir = "data/"
 val_dir = "images/test/"
 ann_dir = "annotations/test/"
 create_odgt(root_dir, val_dir, ann_dir, out_dir)

@@ -2,7 +2,7 @@ import numpy as np
 import scipy
 import scipy.io as sio
 import scipy.misc
-from scipy.misc import imread, imsave
+from PIL import Image
 import matplotlib
 import matplotlib.pyplot as plt
 import json
@@ -61,7 +61,7 @@ def create_odgt(root_dir, file_dir, ann_dir, out_dir, anom_files=None):
                     "fpath_segm": os.path.join(ann_dir,town,ann_file),
                 }
                 # If converting BDD100K uncomment out the following
-                #img = imread(ann_file_path)
+                #img = Image.open(ann_file_path)
                 #if np.any(np.logical_or( (img == 19), (img == 20) )):
                 #    count2 += 1
                 #    anom_files.append(dict_entry)
@@ -130,7 +130,7 @@ create_odgt(root_dir, val_dir, ann_dir, out_dir)
 def convert_bdd(root_dir, ann_dir):
     count = 0
     for img_loc in tqdm(os.listdir(root_dir+ann_dir)):
-        img = imread(root_dir+ann_dir+img_loc)
+        img = Image.open(root_dir+ann_dir+img_loc)
         if img.ndim <= 1:
             continue
         #swap 255 with -1

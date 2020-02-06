@@ -32,7 +32,7 @@ The optional StreetHazards training set is available [here](https://people.eecs.
     python3 train.py
 
     # To evaluate the model on out of distribution test set
-    python3 eval_ood.py --DATASET.list_val ./data/test.odgt
+    python3 eval_ood.py DATASET.list_val ./data/test.odgt
 
 To evaluate the model performance using a CRF with our code please install
 

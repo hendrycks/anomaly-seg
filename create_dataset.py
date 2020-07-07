@@ -96,6 +96,7 @@ create_odgt(root_dir, train_dir, ann_dir, out_dir, anom_files=anom_files)
 
 
 out_dir = "data/test.odgt"
+root_dir = "data/test/"
 val_dir = "images/test/"
 ann_dir = "annotations/test/"
 create_odgt(root_dir, val_dir, ann_dir, out_dir)

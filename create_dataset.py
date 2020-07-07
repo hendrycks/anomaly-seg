@@ -81,26 +81,24 @@ def create_odgt(root_dir, file_dir, ann_dir, out_dir, anom_files=None):
     return anom_files
 
 
-out_dir = "data/train.odgt"
+out_dir = "data/training.odgt"
 #modify root directory to reflect the location of where the streethazards_train was extracted to.
-root_dir = "data/train/"
-train_dir = "images/training"
-ann_dir = "annotations/training/"
+root_dir = "data/"
+train_dir = "train/images/training/"
+ann_dir = "train/annotations/training/"
 anom_files = create_odgt(root_dir, train_dir, ann_dir, out_dir)
 
 
 out_dir = "data/validation.odgt"
-train_dir = "images/validation/"
-ann_dir = "annotations/validation/"
+train_dir = "train/images/validation/"
+ann_dir = "train/annotations/validation/"
 create_odgt(root_dir, train_dir, ann_dir, out_dir, anom_files=anom_files)
 
 
 out_dir = "data/test.odgt"
-root_dir = "data/test/"
-val_dir = "images/test/"
-ann_dir = "annotations/test/"
+val_dir = "test/images/test/"
+ann_dir = "test/annotations/test/"
 create_odgt(root_dir, val_dir, ann_dir, out_dir)
-
 
 
 # BDD100K label map

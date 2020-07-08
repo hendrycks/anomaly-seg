@@ -48,7 +48,7 @@ def eval_ood_measure(conf, seg_label, cfg, mask=None):
     for label in out_labels:
         out_label = np.logical_or(out_label, seg_label == label)
 
-    in_scores = - conf[np.logical_not(out_label))]
+    in_scores = - conf[np.logical_not(out_label)]
     out_scores  = - conf[out_label]
 
     if (len(out_scores) != 0) and (len(in_scores) != 0):

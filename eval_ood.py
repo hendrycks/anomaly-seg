@@ -40,7 +40,7 @@ def visualize_result(data, pred, dir_result):
     Image.fromarray(im_vis).save(os.path.join(dir_result, img_name.replace('.jpg', '.png')))
 
 def eval_ood_measure(conf, seg_label, cfg, mask=None):
-    out_labels = cfg.OOD.out_label
+    out_labels = cfg.OOD.out_labels
     if mask is not None:
         seg_label = seg_label[mask]
 

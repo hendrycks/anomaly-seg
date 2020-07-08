@@ -45,6 +45,7 @@ The source package is from https://github.com/lucasb-eyer/pydensecrf
 
 Within the create_dataset.py file we provide a function that converts the BDD100K labels into the labels we used for our experiments.  We have commented out the section that creates the odgt files that we used for BDD100K.  Uncommenting and running will generate the appropriate labels used for training and testing. The remaining procedure is the same as described above.
 
+Pretrained model is availble at this Google drive [link](https://drive.google.com/file/d/1gaaBMY42HiQ9SBQ9N8Rv258HuCvVox8u/view?usp=sharing).
 
 ## Citation
 

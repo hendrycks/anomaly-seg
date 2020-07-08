@@ -34,6 +34,8 @@ The optional StreetHazards training set is available [here](https://people.eecs.
     # To evaluate the model on out of distribution test set
     python3 eval_ood.py DATASET.list_val ./data/test.odgt
 
+Note: to run on single gpu please refer to this [issue#3](https://github.com/hendrycks/anomaly-seg/issues/3#issuecomment-574846086).
+
 To evaluate the model performance using a CRF with our code please install
 
     pip install pydensecrf

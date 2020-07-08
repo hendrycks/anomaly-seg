@@ -99,7 +99,10 @@ _C.TEST.result = "./"
 # OOD
 # -----------------------------------------------------------------------------
 _C.OOD = CN()
+# whether or not to include or exclude background pixels
 _C.OOD.exclude_back = False
+# which ood method to use
 _C.OOD.ood = "msp"
-_C.OOD.out_labels = (13)
+# which pixels are considered OOD
+_C.OOD.out_labels = (13,)
 

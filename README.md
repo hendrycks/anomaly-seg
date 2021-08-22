@@ -56,7 +56,7 @@ Pretrained model is availble at this Google drive [link](https://drive.google.co
 If you find this useful in your research, please consider citing:
 
     @article{hendrycks2019anomalyseg,
-      title={A Benchmark for Anomaly Segmentation},
+      title={Scaling Out-of-Distribution Detection for Real-World Settings},
       author={Hendrycks, Dan and Basart, Steven and Mazeika, Mantas and Mostajabi, Mohammadreza and Steinhardt, Jacob and Song, Dawn},
       journal={arXiv preprint arXiv:1911.11132},
       year={2019}

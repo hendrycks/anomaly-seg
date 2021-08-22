@@ -17,4 +17,24 @@ title: "A Benchmark for Anomaly Segmentation"
 version: 1.0.0
 date-released: 2019-11-19
 journal: "arXiv preprint arXiv:1911.11132"
-url: "http://arxiv.org/abs/1911.11132"
+url: "https://github.com/hendrycks/anomaly-seg"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Hendrycks"
+    given-names: "Dan"
+  - family-names: "Basart"
+    given-names: "Steven"
+  - family-names: "Mazeika"
+    given-names: "Mantas"
+  - family-names: "Mostajabi"
+    given-names: "Mohammadreza"
+  - family-names: "Steinhardt"
+    given-names: "Jacob"
+  - family-names: "Song"
+    given-names: "Dawn"
+  title: "A Benchmark for Anomaly Segmentation"
+  version: 1.0.0
+  date-released: 2019-11-19
+  journal: "arXiv preprint arXiv:1911.11132"
+  url: "http://arxiv.org/abs/1911.11132"

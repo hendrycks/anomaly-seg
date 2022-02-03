@@ -1,10 +1,14 @@
-# Combined Anomalous Object Segmentation Benchmark
+# Scaling OOD Detection
 
-This repository contains the StreetHazards dataset and some code for the paper [Scaling Out-of-Distribution Detection for Real-World Settings](https://arxiv.org/abs/1911.11132).
+This repository contains the Species dataset, the StreetHazards dataset, and some code for the paper [Scaling Out-of-Distribution Detection for Real-World Settings](https://arxiv.org/abs/1911.11132).
+
+<img align="center" src="species.png" width="500">
+
+__[Download the Species OOD detection dataset here](https://drive.google.com/drive/folders/1j6l7jfGbKL5P5acwKVyktn4y8bWSTeAJ?usp=sharing).__
 
 <img align="center" src="streethazards.gif" width="500">
 
-__[Download the StreetHazards anomaly segmentation dataset here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_test.tar).__
+__[Download the StreetHazards OOD segmentation dataset here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_test.tar).__
 
 The optional StreetHazards training set is available [here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_train.tar). Also, the BDD-Anomaly dataset is sourced from the [BDD100K dataset](bdd-data.berkeley.edu). Code for the multi-label out-of-distribution detection experiments is available in [this repository](https://github.com/xksteven/multilabel-ood).
 
@@ -57,7 +61,7 @@ If you find this useful in your research, please consider citing:
 
     @article{hendrycks2019anomalyseg,
       title={Scaling Out-of-Distribution Detection for Real-World Settings},
-      author={Hendrycks, Dan and Basart, Steven and Mazeika, Mantas and Mostajabi, Mohammadreza and Steinhardt, Jacob and Song, Dawn},
+      author={Hendrycks, Dan and Basart, Steven and Mazeika, Mantas and Zou, Andy and Kwon, Joe and Mostajabi, Mohammadreza and Steinhardt, Jacob and Song, Dawn},
       journal={arXiv preprint arXiv:1911.11132},
       year={2019}
     }

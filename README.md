@@ -62,6 +62,6 @@ If you find this useful in your research, please consider citing:
     @article{hendrycks2019anomalyseg,
       title={Scaling Out-of-Distribution Detection for Real-World Settings},
       author={Hendrycks, Dan and Basart, Steven and Mazeika, Mantas and Zou, Andy and Kwon, Joe and Mostajabi, Mohammadreza and Steinhardt, Jacob and Song, Dawn},
-      journal={arXiv preprint arXiv:1911.11132},
-      year={2019}
+      journal={ICML},
+      year={2022}
     }

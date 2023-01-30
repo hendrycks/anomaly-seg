@@ -10,7 +10,7 @@ __[Download the Species OOD detection dataset here](https://drive.google.com/dri
 
 __[Download the StreetHazards OOD segmentation dataset here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_test.tar).__
 
-The optional StreetHazards training set is available [here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_train.tar). Also, the BDD-Anomaly dataset is sourced from the [BDD100K dataset](bdd-data.berkeley.edu). Code for the multi-label out-of-distribution detection experiments is available in [this repository](https://github.com/xksteven/multilabel-ood).
+The optional StreetHazards training set is available [here](https://people.eecs.berkeley.edu/~hendrycks/streethazards_train.tar). Also, the BDD-Anomaly dataset is sourced from the [BDD100K dataset](https://bdd-data.berkeley.edu). Code for the multi-label out-of-distribution detection experiments is available in [this repository](https://github.com/xksteven/multilabel-ood).
 
 
 ## How to use this repository

@@ -53,7 +53,7 @@ We cannot reshare the images from BDD100K so please visit [BDD website](https://
 
 We have shared the labels in the folder called `seg` and part of the process by which we created these labels in `create_bdd_dataset.py`.  To be able to fully utilize these labels one just needs to pattern match the label ids to the image id (they're the same) from our labels to the BDD images.  
 
-Pretrained model is availble at this Google drive [link](https://drive.google.com/file/d/1gaaBMY42HiQ9SBQ9N8Rv258HuCvVox8u/view?usp=sharing).
+Pretrained models weights are availble at this Google drive [link](https://drive.google.com/file/d/1HIQAhX8WIokZpymslUPDmpbUWdYEKEQ3/view?usp=share_link).
 
 ## Citation
 
